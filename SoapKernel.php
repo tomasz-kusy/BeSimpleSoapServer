@@ -44,4 +44,14 @@ class SoapKernel extends CommonSoapKernel
 
         parent::filterResponse($response);
     }
+
+    /**
+     * Get attachments
+     *
+     * @return \BeSimple\SoapCommon\Mime\Part[] | null
+     */
+    public function getAttachments()
+    {
+        return $this->attachments;
+    }
 }

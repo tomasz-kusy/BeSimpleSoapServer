@@ -85,7 +85,7 @@ class SoapServerBuilder extends AbstractSoapBuilder
      */
     public function withActor($actor)
     {
-        $this->options['actor'] = $actor;
+        $this->soapOptions['actor'] = $actor;
 
         return $this;
     }
@@ -135,7 +135,7 @@ class SoapServerBuilder extends AbstractSoapBuilder
      */
     public function withBase64Attachments()
     {
-        $this->options['attachment_type'] = Helper::ATTACHMENTS_TYPE_BASE64;
+        $this->soapOptions['attachment_type'] = Helper::ATTACHMENTS_TYPE_BASE64;
 
         return $this;
     }
@@ -147,7 +147,7 @@ class SoapServerBuilder extends AbstractSoapBuilder
      */
     public function withSwaAttachments()
     {
-        $this->options['attachment_type'] = Helper::ATTACHMENTS_TYPE_SWA;
+        $this->soapOptions['attachment_type'] = Helper::ATTACHMENTS_TYPE_SWA;
 
         return $this;
     }
@@ -159,7 +159,7 @@ class SoapServerBuilder extends AbstractSoapBuilder
      */
     public function withMtomAttachments()
     {
-        $this->options['attachment_type'] = Helper::ATTACHMENTS_TYPE_MTOM;
+        $this->soapOptions['attachment_type'] = Helper::ATTACHMENTS_TYPE_MTOM;
 
         return $this;
     }
